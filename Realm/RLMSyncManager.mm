@@ -95,15 +95,6 @@ static dispatch_once_t s_onceToken;
     return s_sharedManager;
 }
 
-//- (RLMSyncSession *)sessionForSyncConfiguration:(RLMSyncConfiguration *)config {
-//    NSURL *fileURL = [RLMSyncFileManager fileURLForRawRealmURL:config.realmURL user:config.user];
-//    return [config.user _registerSessionForBindingWithFileURL:fileURL
-//                                                   syncConfig:config
-//                                            standaloneSession:YES
-//                                                 onCompletion:nil];
-//    return nil;
-//}
-
 - (instancetype)initWithCustomRootDirectory:(NSURL *)rootDirectory {
     if (self = [super init]) {
         // Create the global error handler.
